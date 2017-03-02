@@ -1,23 +1,30 @@
 @media screen and (min-width: 300px)  {
-    body {
+    /* CSS för login */
+    .login-body {
+      height: 100%;
+      width: 100%;
       background-color: #BD74E0;
       font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
     }
-    .container {
+    .container1 {
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 50%;
     }
     header {
       display: flex;
       justify-content: center;
+      height: 50%;
+      text-shadow: 2px 2px gray;
     }
     h1 {
       color: white;
     }
     form {
-
-  }
+    }
   input[type=text], input[type=password] {
       width: 200px;
       padding: 12px 20px;
@@ -41,13 +48,55 @@
       border: none;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
+      box-shadow: 2px 2px gray;
   }
   .container {
       padding: 16px;
       font-family: 'Roboto', sans-serif;
   }
-  span.psw {
-      float: right;
-      padding-top: 16px;
+ /* CSS för home */
+ }
+ .home-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   height: 50%;
+   box-shadow: 2px 2px gray;
+   background-color: #BD74E0;
+ }
+ .container2 {
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   height: 500px;
+   margin-top: 5px;
+ }
+ .musrow {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+ .left {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+ }
+ .right {
+   display: flex;
+   align-items: flex-end;
+ }
+ [type="checkbox"]:not(:checked),
+ [type="checkbox"]:checked {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  }
+  h3 {
+    color: gray;
+    font-style: italic;
   }
 }
